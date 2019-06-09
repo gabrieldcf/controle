@@ -1,0 +1,8 @@
+﻿\begin{tikzpicture}[scale=10]
+	%\draw[style=help lines] (-0.2,0) grid[step=0.1] (0.6,0.5);
+	\draw[->] (0,-0.1) -- (0,0.55) node[left]{ $y(t)$};
+	\draw[->] (-0.1,0.) -- (0.55,0.) node[right]{$t$};
+	\draw[ultra thick] (0,0) -- (0.2,0.25) -- (0.45,0.25);
+	\draw[dotted] (0.2,0.25) -- (0,0.25) node[left]{$\frac{aK}{T}$};
+	\draw[dotted] (0.2,0.25) -- (0.2,0) node[below]{${}_T$};
+\end{tikzpicture}

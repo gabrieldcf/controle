@@ -1,0 +1,8 @@
+\begin{tikzpicture}[scale=10]
+	%\draw[style=help lines] (-0.2,0) grid[step=0.1] (0.6,0.5);
+	\draw[->] (0,-0.1) -- (0,0.55) node[left]{ $\dfrac{y(t)}{aK\tau}$};
+	\draw[->] (-0.1,0.) -- (0.55,0.) node[right]{$t$};
+	\draw[ultra thick, domain=0:0.4] plot (\x ,  {  0.4*( exp(-6*\x)+6*\x -1 ) } ); 
+	\draw[dotted,domain=0:0.24] plot (\x, 0.4*6*\x) node[left]{$y=\frac{t}{\tau}$};
+	\draw[dotted,domain=0.17:0.4] plot (\x, {0.4*(6*\x-1) } ) node[right]{$y=\frac{t}{\tau}-1$};
+\end{tikzpicture}

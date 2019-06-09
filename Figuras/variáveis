@@ -1,0 +1,5 @@
+\begin{tikzpicture}[scale=1]
+	\draw[rounded corners = 3, fill=lightgray] (-1,-0.6) rectangle node[above]{Processo} node[below]{\footnotesize var. de estado, $x$} (1,0.6);
+	\draw[->] (-3,0) -- node[above]{\footnotesize estímulo, $u$} (-1.02,0);
+	\draw[->] (1,0) -- node[above]{\footnotesize resposta, $y$} (3,0);
+\end{tikzpicture}

@@ -1,0 +1,5 @@
+\begin{tikzpicture}[scale=2.5]
+	\draw[very thick] (0,0) rectangle node{$G(s)$} node[below=16]{\footnotesize $y(t)=G(s) \cdot u(t)$} (0.6,0.36);
+	\draw[thick, ->] (-0.5,0.18) -- node[above]{$u(t)$} (0,0.18);
+	\draw[thick, ->] (0.6,0.18) -- node[above]{$ y(t)$} (1.1,0.18);
+\end{tikzpicture}

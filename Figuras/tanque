@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=2.5]
+	\begin{scope}
+
+	\draw[thick, fill=lightgray] (0.1,0.95) -- (0.1,0.8) -- (0.1,0.2) to [out=-90,in=180] (0.2,0.1) --  (0.8,0.1) to[out=0,in=-90] (0.9,0.2) -- (0.9,0.8) -- (0.9,0.95) -- (0.9,0.8) -- (0.1,0.8);
+	\draw[ultra thick, fill=gray, rotate around={-30: (0.5,0.5)}] (0.5,1.1) -- (0.5,0.5) to [out=180,in=0] (0.35,0.53) to [out=180,in=180] (0.35,0.47) to [out=0,in = 180] (0.65,0.53) to[out=0,in=0] (0.65,0.47) to [out=180,in=0]  (0.5,0.5);
+	\draw[very thick, ->, rounded corners = 3pt] (-0.25,1.1) --  node[above]{$F_0$} (0.25,1.1) -- (0.25,0.82);
+	\draw[very thick, ->, rounded corners = 3pt] (0.5,0.1) -- (0.5,-0.2) -- node [below=3]{$F_1=f(h)$} (1.1,-0.2);
+	\draw[very thick, fill = white] (0.7,-0.25) -- (0.9,-0.15) -- (0.9,-0.25) -- (0.7,-0.15) -- (0.7,-0.25);
+	\draw[very thin] (-0.1,0.8) -- (0.04,0.8) ;
+	\draw[very thin] (-0.1,0.1) -- (0.08,0.1);
+	\draw[thin, <->] (-0.03,0.1) -- node[left]{$h$} (-0.03,0.8);
+	\end{scope}
+\end{tikzpicture}

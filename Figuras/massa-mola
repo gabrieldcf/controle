@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.6]
+\usetikzlibrary{decorations.pathmorphing,patterns}
+	\draw[decoration={aspect=0.3, segment length=3mm, amplitude=3mm,coil},decorate] (2,5) -- (2,1); 
+	\draw[decoration={aspect=0.3, segment length=2mm, amplitude=3mm,coil},decorate] (0,5) -- (0,2); 
+	\fill [pattern = north east lines] (-1,5) rectangle (3,5.2);
+	\draw[thick] (-1,5) -- (3,5);
+	\begin{scope}[shift={(0,1.6)}]
+		\draw (0,0) circle [radius=.4];
+		\draw[fill=white] (-0.5,0) rectangle (0.5,-0.2);
+		\draw[fill=white] (-0.45,-0.2) -- (0.45,-0.2) -- (0.35,-0.8) -- (-0.35,-0.8) -- (-0.45,-0.2);
+	\end{scope}
+	\draw[fill=lightgray] (2,0.75) to[out=0,in=170] (2.3,0.6) -- (1.7,0.6) to[out=20,in=180] (2,0.75);
+	\begin{scope}[shift={(2,0.6)}]
+		\draw (0,0) circle [radius=.4];
+		\draw[fill=white] (-0.5,0) rectangle (0.5,-0.2);
+		\draw[fill=white] (-0.45,-0.2) -- (0.45,-0.2) -- (0.35,-0.8) -- (-0.35,-0.8) -- (-0.45,-0.2);
+	\end{scope}
+	\draw[dashed,gray] (-1,0.8) node[left,black]{\footnotesize $x^*$} -- node[above right, black, xshift = 5,yshift=-1]{\footnotesize $p^*$} (-0.4,0.8) ;
+	\draw[dotted,gray,-stealth] (-0.8,5) -- (-0.8,0.8);
+	\draw[dashed,gray] (1,-0.2) node[left,black]{\footnotesize $x$} -- node[above right, black, xshift = 6,yshift=-1]{\footnotesize $p$} (1.6,-0.2) ;
+	\draw[dotted,gray,-stealth] (1.2,5) -- (1.2,-0.2);
+	%\draw[dashed,gray]  (-1,-0.2) -- (0.4,-0.2);
+	%\draw[dotted,gray,stealth-stealth] (-0.8,0.8) -- node[right,black]{$\delta x$} (-0.8,-0.2);
+\end{tikzpicture}

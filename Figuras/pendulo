@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=4]
+	\draw[very thick] (0,0) -- (-0.3,0.9);
+		\draw[thin,<->] (0.1,0.04) -- node[right]{$\ell$} (-0.2,0.94);
+	%\draw[dashed] (0,0) arc (288:252:0.95 and 0.95);
+	\draw[dashed,gray,<->] (-0.3,0.9) ++ (300:0.95) arc (300:255:.95);
+	\draw[fill=lightgray] (-0.3,0.9) ++ (288:0.2) node[below, xshift=-2.5]{\footnotesize$\theta$} arc (288:270:.2)  -- (-0.3,0.9) -- ++ (288:0.2) ;
+	\draw[->] (-0.3,0.9) ++ (270:0.2) arc (270:300:.2) ;
+	\draw[dashed] (-0.3,-0.3) -- (-0.3,0.9);
+	\shade[very thick, ball color = red] (0,0) circle (2pt);
+	\draw[thin,blue,->] (0,0) -- (0.1,-0.2667);
+	\draw[thin,blue,->] (0,0) -- (-0.1,-0.0333);
+	%\draw[thin,blue,->] (0.1,-0.2667) -- (0,-0.3);
+	\draw[thick, blue, ->] (0,0) -- (0,-0.3) node[below]{$mg$};
+	\draw[blue] (0,0) ++ (288:0.15) node[below, xshift=-1]{\footnotesize$\theta$} arc (288:270:.15)  ;
+\end{tikzpicture}

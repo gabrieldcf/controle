@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=6]
+	\begin{scope}[shift={(0,-0.08)}]
+		\draw (0,0) rectangle node[]{\huge $\int$} (0.16,0.16);
+	\end{scope}
+	\begin{scope}[shift={(0.48,-0.08)}]
+		\draw (0,0) rectangle node[]{\huge $\int$} (0.16,0.16);
+	\end{scope}
+	\draw[->] (-0.4,0) -- node[below]{acel. angular} node[above]{$\ddot \theta$} (-0.01,0);
+	\draw[->] (0.16,0) -- node[below]{vel. angular} node[above]{$\dot \theta$} (0.47,0);
+	\draw[->] (0.64,0) -- node[below]{ângulo} node[above]{$\theta$} (0.92,0);
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=5]
+	%\draw[style=help lines] (-0.2,0) grid[step=0.1] (0.6,0.5);
+	\draw[step = 0.1, lightgray] (0,0) grid (1,1);
+	\draw [->] (0,0) -- (0,1) node[above=4]{$y(t)$}; 	
+	\draw[<-] (1,0.8) node[right=4]{$t$} -- (0,0.8) ;
+	\foreach \y in {1,0,...,-4}
+		\draw (-0.05,\y/5+0.8) node{\scriptsize \y};
+	\foreach \x in {0,1,...,10}
+		\draw (0.1*\x,-0.05) node[fill = white]{\scriptsize \x};
+\end{tikzpicture}
