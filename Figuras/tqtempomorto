@@ -1,0 +1,13 @@
+\begin{tikzpicture}[scale=2]
+	\draw[very thick, ->] (-2.5,1.1) -- node[above]{\footnotesize $T_0(t)$} (-2.05,1.1);
+	\draw[thick] (-1.87,1.1) circle [radius=5pt];
+	\draw[thick, -stealth] (-2.1,0.88)  --++ (60:0.35) --++ (-60:0.2) --++ (60:0.35);
+	\draw[very thick, ->, rounded corners = 3pt] (-1.7,1.1) node[above, xshift = 15]{\footnotesize $T_1(t)$} --  (0.5,1.1) node[above, xshift = -10]{\footnotesize $T_1(t-\theta)$} -- (0.5,0.82);
+	\draw[thick, fill = white] (-1.2,1.05) rectangle node[below=1]{\footnotesize $\theta = \sfrac{\ell}{v_0}$} (0.,1.15);
+	\draw[thick, fill=lightgray] (0.1,0.95) -- (0.1,0.8) -- (0.1,0.2) to [out=-90,in=180] (0.2,0.1) -- (0.8,0.1) to[out=0,in=-90] (0.9,0.2) --  (0.9,0.8) -- (0.9,0.95) --  (0.9,0.8) -- (0.1,0.8);
+	\draw[ultra thick, fill=gray, rotate around={-30: (0.5,0.5)}] (0.5,1.1) -- (0.5,0.5)  node[below left = 2]{\footnotesize $T$}  to [out=180,in=0] (0.35,0.53) to [out=180,in=180] (0.35,0.47) to [out=0,in = 180] (0.65,0.53) to[out=0,in=0] (0.65,0.47) to [out=180,in=0]  (0.5,0.5);
+	\draw[very thick, ->, rounded corners] (0.5,0.1) -- (0.5,-0.1) --  (1.05,-0.1) ;
+	\draw[very thick, ->] (1.2,0.05) -- (1.6,0.05);
+	\draw[thick, fill = white] (1.2,-0.1) -- (1.05,-0.3) -- (1.35,-0.3) -- (1.2,-0.1);
+	\draw[thick, fill = white] (1.2,-0.1) circle [radius=0.15];
+\end{tikzpicture}

@@ -1,0 +1,11 @@
+\begin{tikzpicture}[scale=1]
+	\begin{scope}[shift={(0,0)}]
+		\draw[thick] (-1,-0.2) rectangle node[below=6]{\footnotesize $G_1(s) = e^{-s\theta_1}$} (1,0.2);
+	\end{scope}
+	\draw[very thick, -stealth] (-2,0) -- node[above]{\footnotesize $u(t)$} (-1,0);
+	\begin{scope}[shift={(3.5,0)}]
+		\draw[thick] (-1,-0.2) rectangle node[below=6]{\footnotesize $G_2(s) = e^{-s\theta_2}$} (1,0.2);
+	\end{scope}
+	\draw[very thick, -stealth] (1,0) -- node[above]{\footnotesize $u(t-\theta_1)$} (2.5,0);
+	\draw[very thick, -stealth] (4.5,0) -- node[above]{\footnotesize $u(t-\theta_1-\theta_2)$} (6.5,0);
+\end{tikzpicture}

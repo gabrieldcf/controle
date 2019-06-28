@@ -1,0 +1,9 @@
+\begin{tikzpicture}[scale=2]
+	\draw[thick](0,0.9) -- (0,0.2) -- (-0.2,0.2) -- (-0.2,0.1) -- (0,0.1) -- (0,0.1) to[out=-90,in=180] (0.1,0) -- (0.9,0) to[out=0,in=-90]  (1,0.1) -- (1,0.8) -- (1.2,0.8) -- (1.2,0.9) -- (1,0.9) to[out=90,in=0] (0.9,1)--(0.9,0.2) to[out=-90,in=0] (0.8,0.1) -- (0.2,0.1) to [out=180,in=-90] (0.1,0.2) -- (0.1,1) to [out=180,in=90] (0,0.9);
+	\draw[thick, fill=lightgray] (0.1,0.8) -- (0.1,0.2) to [out=-90,in=180] (0.2,0.1) -- node[above]{$V\;,C_A,\; T$} (0.8,0.1) -- (1.2,0.1) -- (1.2,0.2) -- (0.9,0.2) -- (0.9,0.8) -- (0.1,0.8);
+	\draw[ultra thick, fill=gray, rotate around={-30: (0.5,0.5)}] (0.5,1.1) -- (0.5,0.5) to [out=180,in=0] (0.35,0.53) to [out=180,in=180] (0.35,0.47) to [out=0,in = 180] (0.65,0.53) to[out=0,in=0] (0.65,0.47) to [out=180,in=0]  (0.5,0.5);
+	\draw[very thick, ->] (-0.7,0.15) -- node[above]{$T_{r{0}}$} (-0.22,0.15);
+	\draw[very thick, ->, rounded corners = 3pt] (-0.7,1.2) -- node[above]{$F_0,\;C_{A0},\;T_0$} (0.3,1.2) -- (0.3,0.82);
+	\draw[very thick, ->] (1.2,0.15) -- node[above]{$F,\;C_{A},\;T$} (2,0.15);
+	\draw[very thick, ->] (1.2,0.85) -- node[above]{$T_{r}\approx T_{r0}$} (2,0.85);
+\end{tikzpicture}
