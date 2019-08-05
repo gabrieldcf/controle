@@ -1,9 +1,9 @@
 name: meu-ambiente
 channels:
-	 - conda-forge
+- conda-forge
 dependencies:
-  	- numpy
-  	- scipy
-  	- matplotlib
-  	- pandas
-  	- sklearn
+ - numpy
+ - scipy
+ - matplotlib
+ - pandas
+ - sklearn
