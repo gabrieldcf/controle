@@ -1,0 +1,28 @@
+﻿\begin{tikzpicture}[scale=7]
+	\begin{scope}
+	\draw [thick] (0,0) circle (1.5pt);
+	\draw (-0.038,-0.038) node[below]{$-$} -- (0.038,0.038)  (0.038,-0.038)  -- (-0.038,0.038);
+	\draw [->] (-0.25,0) -- node[above]{ $ y^*(t) = 0$} (-0.055,0)node[below,xshift=-2]{$+$};
+	\end{scope}
+	\draw [->] (0.055,0) -- node[above]{ $ e(t)$} (0.245,0);
+	\draw [thick] (0.25,-0.1) rectangle node[]{$C(s) = K_c$} node[below=20]{controlador} (0.5,0.1);
+	\draw [->] (0.5,0) -- node[above]{ $ c(t)$} (0.695,0);
+	\draw [thick] (0.7,-0.1) rectangle node[]{$F(s) = K_f$} node[below=20]{ elem.\ final} node[below=32]{de controle} (0.95,0.1);
+	\draw [->] (0.95,0) -- node[above]{ $ m(t)$} (1.185,0);
+	\draw [thick] (1.19,-0.1) rectangle node[]{$G(s) = \dfrac{K_m}{\tau s+1}$} (1.51,0.1);
+	\draw [->] (0.95,0.45) -- node[above]{ $ d(t)$} (1.185,0.45);
+	\draw [thick] (1.19,0.35) rectangle node[]{$H(s) = \dfrac{K_d}{\tau s+1}$} (1.51,0.55);
+	\draw [->] (1.4,0.225) -- node[above, xshift = 8]{$ y(t)$} (1.8,0.225);
+	%\draw [->] (1.375,0.3) -- (1.375,0.105);
+	\draw [->] (1.35,0.35) -- (1.35,0.28);
+	\draw [->] (1.35,0.1) -- (1.35,0.17);
+	%\draw (1.375,0.225) circle [radius=1.2pt] node{+};
+	\begin{scope}[shift={(1.35,0.225)}]
+	\draw [thick] (0,0) circle (1.5pt);
+	\draw (-0.038,-0.038) node[below]{$+$}  -- (0.038,0.038)  (0.038,-0.038)   -- (-0.038,0.038) node[above]{ $+$};
+	\end{scope}
+	\draw [dashed] (1.15,-0.15) rectangle node[below=78] { processo} (1.55,0.6);
+	\draw [thick] (1.25,-0.5) rectangle node[]{$T(s) = K_t$} node[below=20]{ instrumento} node[below=32]{ de medida} (1.5,-0.3);
+	\draw [->] (1.65,0.225) -- (1.65,-0.4) -- (1.505,-0.4);
+	\draw [->] (1.25,-0.4) -- node[below]{$ y_m(t) $} (0,-0.4) -- (0,-0.055);
+\end{tikzpicture}
