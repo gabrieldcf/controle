@@ -1,0 +1,15 @@
+﻿\begin{tikzpicture}[scale=6]
+	\begin{scope}[shift={(-0.2,-0.08)}]
+		\draw (0,0) rectangle node[]{$C(s)$} (0.2,0.16);
+	\end{scope}
+	\begin{scope}[shift={(0.38,-0.08)}]
+		\draw (0,0) rectangle node[]{$G(s)$} (0.2,0.16);
+	\end{scope}
+	\draw (-0.45,0) circle  [radius=1.6pt] node[xshift = -5]{\tiny $+$} node[yshift=-5]{\tiny $-$};
+	\draw[-stealth] (-0.7,0) node[left]{$y^*(t)$} -- (-0.51,0);
+	\draw[-stealth] (-0.39,0) --  node[above]{$e(t)$} (-0.2,0);
+	\draw[-stealth] (0,0) -- (0.1,0) node[right = -4]{\color{red}$\times$};
+	\draw[-stealth] (0.2,0.2)node[above]{$m(t)$}  -- (0.2,0) --  (0.37,0);
+	\draw[-stealth] (0.58,0) --  node[above]{$y(t)$} (0.82,0);
+	\draw[-stealth] (0.7,0) -- (0.7,-0.2) -- (-0.45,-0.2) -- (-0.45,-0.06) ;
+\end{tikzpicture}

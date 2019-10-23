@@ -1,0 +1,14 @@
+﻿\begin{tikzpicture}[scale=6]
+	\begin{scope}[shift={(0,-0.08)}]
+		\draw (0,0) rectangle node[]{$C(s)$} (0.2,0.16);
+	\end{scope}
+	\begin{scope}[shift={(0.48,-0.08)}]
+		\draw (0,0) rectangle node[]{$G(s)$} (0.2,0.16);
+	\end{scope}
+	\draw (-0.45,0) circle  [radius=1.6pt] node[xshift = -5]{\tiny $+$} node[yshift=-5]{\tiny $-$};
+	\draw[-stealth] (-0.7,0) node[left]{$y^*(t)$} -- (-0.51,0);
+	\draw[-stealth] (-0.39,0) --  node[above]{$e(t) = y^*(t)$} (-0.01,0);
+	\draw[-stealth] (0.2,0) -- node[above]{$m(t)$} (0.47,0);
+	\draw[-stealth] (0.68,0) --  node[above]{$y(t)$} (0.92,0);
+	\draw[-stealth] (0.8,0) -- (0.8,-0.2) -- (-0.45,-0.2) -- (-0.45,-0.15) node[above = -4]{\color{red}$\times$};
+\end{tikzpicture}
